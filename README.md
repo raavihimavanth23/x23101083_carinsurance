@@ -5,5 +5,5 @@ A library to calculate car insurance assurance amounts based on car damage and p
 ## Installation
 
 ```bash
-pip install insurance_calculator
+pip install x23101082-car-insurance
 
