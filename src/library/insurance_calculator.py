@@ -10,6 +10,7 @@ def calculate_max_assurance(car, policy, car_damages):
     # Adjust for earlier car damages.
     damage = 0
     for d in car_damages:
+        print(d)
         if d.severity is 'Low':
             damage += 0.02
         elif d.severity is 'Moderate':

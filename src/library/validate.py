@@ -77,7 +77,8 @@ def check_apply_policy(car_policy):
         raise CarInsuranceException("sum assurance is not within the policy assurance range")
     if du.is_after(car_policy.start_date, car_policy.end_date):
         raise CarInsuranceException("start date should be less than end date")
-    if du.date_plus(car_policy.start_date, policy.tenure) < car_policy.end_date:
+    print('plus: ', du.date_plus(car_policy.start_date, policy.tenure*365), car_policy.end_date)
+    if du.date_plus(car_policy.start_date, policy.tenure*365) < car_policy.end_date:
         raise CarInsuranceException("End Date is greater policy tenure")
     
 
