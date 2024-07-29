@@ -16,3 +16,18 @@ class DocumentHelper():
             return filename
         except Exception as e:
             raise DocumentException("Error uploading image to s3")
+        
+    def upload_image_to_s3(requests, data, file):
+        files = {'file':file.read()}
+        response = requests.post(data['url'], data = data['fields'],files= files)
+        if response.status_code == 200 or response.status_code== 204:
+            return 'Image Uploaded successfully'
+        else:
+            raise DocumentException("Unable to upload profile picture")
+
+    def get_presigned_url(requests, AWS_IMAGE_API_URL):
+        response = requests.post(AWS_IMAGE_API_URL)
+        if response.status_code == 200:
+            return response.json()
+        else:
+            raise DocumentException("Unable to upload profile image")

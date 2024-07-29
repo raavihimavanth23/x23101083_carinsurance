@@ -1,10 +1,10 @@
 Metadata-Version: 2.1
-Name: x23101082-car-insurance
-Version: 1.0.2
-Summary: Car Insurance Library
+Name: insurance-calculator
+Version: 0.1.0
+Summary: A library to calculate car insurance assurance amounts
 Home-page: https://github.com/raavihimavanth23/x23101083_carinsurance
 Author: himavanthraavi23
-Author-email: himavanthraavi23@gmai.com
+Author-email: himavanthraavi23@gmail.com
 License: UNKNOWN
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
@@ -24,7 +24,5 @@ A library to calculate car insurance assurance amounts based on car damage and p
 ```bash
 pip install x23101082-car-insurance
 
-
-OpenSource License
 
 
